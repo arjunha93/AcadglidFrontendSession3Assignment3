@@ -1,0 +1,43 @@
+/*
+This is the global css
+*/
+/*Default color of main button*/
+.dropbtn {
+    background-color:cyan;
+    color:darkgoldenrod;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:beige;
+    min-width: 160px;
+    box-shadow: 0px 10px 16px 0px aqua;
+    z-index: 1;
+}
+/*styling dropdown content*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/*style of sub buttons on mouseover*/
+.dropdown-content a:hover {background-color:cornflowerblue}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*color of main button on mouseover*/
+.dropdown:hover .dropbtn {
+    background-color:cadetblue;
+}
