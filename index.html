@@ -1,22 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Session3 and assignment3</title>
-        <!-- Stylesheet link for styling this page-->
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-    </head>
-    <body>
-        <header>This is the assignment on Dropdown buttons</header>
-        <h2>Dropdown Buttons</h2>
-        <p>Move the mouse over the button to open the dropdown Buttons.</p>
-        <!-- Dropdown content start here-->
-        <div class="dropdown">
-          <button class="dropbtn">Click Me</button>
-          <div class="dropdown-content">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-          </div>
-        </div>
-    </body>
+
+<body>
+
+    <h2>Grouping Form Data with Fieldset</h2>
+    <p></p>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Personal information:</legend>
+            Name:
+            <input type="text" name="firstname" placeholder="Enter your Name">
+            <br> Email:
+            <input type="text" name="lastname" placeholder="arjun@gmail.com">
+            <br>PHONE:
+            <input type="text" name="lastname" placeholder="Your phone number">
+            <br>
+        </fieldset>
+    </form>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>delivery Address:</legend>
+            Address:
+            <textarea rows="4" cols="50"></textarea>
+            <br> Postcode:
+            <input type="text" name="lastname">
+            <br>Country:
+            <input type="text" name="lastname">
+            <br>
+        </fieldset>
+    </form>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Card Details:</legend>
+            Card Type:
+            <input type="radio" name="cardtype">VISA
+            <input type="radio" name="cardtype">Amex
+            <input type="radio" name="cardtype">MasterCard
+            <br> Card Number:
+            <input type="text" name="card No" placeholder="xxxx-xxxx-xxxx-xxxx">
+            <br> Security Code:
+            <input type="text" name="card No" placeholder="xxxx">
+            <br> Name On Card:
+            <input type="text" name="card No" placeholder="Exact name as on the card">
+        </fieldset>
+    </form>
+    <input type="submit" value="SUBMIT">
+</body>
+
 </html>
